@@ -1,4 +1,4 @@
-const { env } = require('strapi');
+const { env } = require('path');
 
 module.exports = ({ env }) => ({
   // **Database Connection Configuration**
