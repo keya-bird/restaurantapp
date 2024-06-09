@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = ({ env }) => ({
   connection: {
-    client: 'pg', // Use 'pg' for PostgreSQL
+    client: 'postgres', // Use 'pg' for PostgreSQL
     connection: {
       host: 'dpg-cphjfc0cmk4c73ej56eg-a', // Replace with your actual Render PostgreSQL hostname
       port: 5432, // Default PostgreSQL port
