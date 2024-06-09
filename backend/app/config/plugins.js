@@ -11,7 +11,7 @@ renderAdmin(document.getElementById("strapi"), {
     upload: upload,
     "users-permissions": usersPermissions,
     config: {
-      jwtSecret: env('xMKu3WninpFtH0fK/NXTcg=='),
+      jwtSecret: env('JWT_SECRET'),
   },
 },
 });
