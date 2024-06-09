@@ -14,5 +14,8 @@ renderAdmin(document.getElementById("strapi"), {
     i18n: i18N,
     upload: upload,
     "users-permissions": usersPermissions,
+    config: {
+      jwtSecret: env('xMKu3WninpFtH0fK/NXTcg=='),
   },
+},
 });
