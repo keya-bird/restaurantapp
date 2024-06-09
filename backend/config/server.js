@@ -18,7 +18,7 @@ module.exports = ({ env }) => ({
     keys: env.array('APP_KEYS', []), // Set a default empty array to avoid errors
   },
 
-  // **Other Configurations** (Add your other Strapi configurations here)
+
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
