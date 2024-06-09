@@ -10,11 +10,11 @@ module.exports = ({ env }) => {
     mysql: {
       connection: {
         connectionString: env("DATABASE_URL"),
-        host: env("DATABASE_HOST", "127.0.0.1"),
+        host: env("DATABASE_HOST", "dpg-cphjfc0cmk4c73ej56eg-a"),
         port: env.int("DATABASE_PORT", 5432),
-        database: env("DATABASE_NAME", "nextapp"),
-        user: env("DATABASE_USERNAME", "postgres"),
-        password: env("DATABASE_PASSWORD", "Kbirdsbill2024!"),
+        database: env("DATABASE_NAME", "nextapp_2703"),
+        user: env("DATABASE_USERNAME", "postgres2024"),
+        password: env("DATABASE_PASSWORD", "sw6tCa2ejpJkFbn4Em5erkZuXXtq7mik"),
         ssl: env.bool("DATABASE_SSL", false) && {
           key: env("DATABASE_SSL_KEY", undefined),
           cert: env("DATABASE_SSL_CERT", undefined),
