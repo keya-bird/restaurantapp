@@ -1,6 +1,5 @@
-const { env } = require('strapi');
-
 module.exports = ({ env }) => ({
+  port: env.int('PORT', 1337),
 connection: {
   client: env('DATABASE_CLIENT', 'postgres'),
   connection: {
