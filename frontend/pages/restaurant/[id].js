@@ -58,7 +58,9 @@ function DishCard({ data }) {
             data.attributes && data.attributes.image && data.attributes.image.data
               ? data.attributes.image.data.attributes.url
               : "/placeholder.png" // Replace with your placeholder image path
-        
+          }`}
+          alt="Restaurant Placeholder Image"
+          unoptimized={true} // Remove in production for optimization
         />
         <div className="p-8">
           <div className="group inline-block mb-4" href="#">
