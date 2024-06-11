@@ -54,12 +54,10 @@ function DishCard({ data }) {
           className="w-full rounded-2xl"
           height={300}
           width={300}
-      src={`${process.env.NEXT_PUBLIC_API_URL || "https://restaurantapp-jqhf.onrender.com"}${
+          src={`${process.env.NEXT_PUBLIC_API_URL}${
             data.attributes && data.attributes.image && data.attributes.image.data
               ? data.attributes.image.data.attributes.url
               : "/placeholder.png" // Replace with your placeholder image path
-          }`}
-          alt="Restaurant Placeholder Image"
         
         />
         <div className="p-8">
