@@ -36,7 +36,7 @@ function RestaurantCard({ data }) {
   className="w-full rounded-2xl"
   height={300}
   width={300}
-  src={`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337"}${
+  src={`${process.env.NEXT_PUBLIC_API_URL || "https://restaurantapp-jqhf.onrender.com"}${
     data.attributes && data.attributes.image && data.attributes.image.data
       ? data.attributes.image.data.attributes.url
       : "/placeholder.png" // Replace with your placeholder image path
