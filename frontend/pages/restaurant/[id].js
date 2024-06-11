@@ -54,11 +54,15 @@ function DishCard({ data }) {
           className="w-full rounded-2xl"
           height={300}
           width={300}
-          src={`${process.env.NEXT_PUBLIC_API_URL || "https://restaurantapp-jqhf.onrender.com"}${
-            data.attributes && data.attributes.image && data.attributes.image.data
-              ? data.attributes.image.data.attributes.url
-              : "/placeholder.png" // Replace with your placeholder image path
-          }`}
+src={`<span class="math-inline">\{process\.env\.NEXT\_PUBLIC\_API\_URL \|\| "https\://restaurantapp\-jqhf\.onrender\.com"\}</span>{
+    data.attributes && // Check for attributes existence
+    data.attributes.restaurantImage && // Check for restaurantImage property
+    data.attributes.restaurantImage.data && // Check for data property
+    data.attributes.restaurantImage.data.attributes && // Check for attributes property
+    data.attributes.restaurantImage.data.attributes.url
+    ? data.attributes.restaurantImage.data.attributes.url
+    : "/placeholder.png"
+}`}
           alt="Restaurant Placeholder Image"
           unoptimized={true} // Remove in production for optimization
         />
