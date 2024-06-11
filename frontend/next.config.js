@@ -5,7 +5,7 @@ const nextConfig = {
 	  remotePatterns: [
 		{
 		  protocol: "https",
-		  hostname: "restaurantapp-jqhf.onrender.com",
+		  hostname: "https://restaurantapp-red.vercel.app/",
 		  port: "",
 		  pathname: "/uploads/**",
 		},
