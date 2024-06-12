@@ -46,7 +46,7 @@ Frontend: http://localhost:3000
 Strapi admin panel: http://localhost:1337
 
 
-# Deployment
+## Deployment
 
 This application can be deployed using Vercel (frontend) and Render (backend).
 
