@@ -11,7 +11,6 @@ Order Processing: Place orders and receive confirmation with details.
 Admin Functionality: Manage menus (add, update, delete items) and view order history (for designated users).
 
 ## Tech Stack:
-
 Frontend: Next.js
 Authentication: JWT (JSON Web Tokens)
 Database: PostgreSQL
@@ -22,7 +21,6 @@ Getting Started (Local Development)
 This project has separate codebases for the frontend and backend.
 
 ## Prerequisites:
-
 Node.js (version 9 or later)
 PostgreSQL database
 Strapi CMS (installed and configured)
@@ -32,28 +30,29 @@ Installation:
 
 ### Install dependencies:
 Run npm install in both the frontend and backend directories.
-Configure environment variables:
+
+### Configure environment variables:
 Create a .env.local file in the frontend directory with:
 NEXT_PUBLIC_API_URL=http://localhost:1337  # Replace with your Strapi API URL if different
 Create a .env file in the backend directory with:
 DATABASE_URL=your_postgres_connection_string  # Replace with your connection string
 JWT_SECRET=your_jwt_secret  # Generate a strong secret string
-Start development servers:
+
+### Start development servers:
 In the frontend directory, run npm run dev.
 In the backend directory, run npm run develop.
-Access the application:
+
+### Access the application:
 Frontend: http://localhost:3000
 Strapi admin panel: http://localhost:1337
 
 
 ## Deployment
-
 This application can be deployed using Vercel (frontend) and Render (backend).
 
 ### Important Note: These are general deployment instructions. Each platform has its own configuration steps. Be sure to consult the specific documentation for Vercel and Render for detailed deployment instructions.
 
 ## License
-
 Copyright 2024 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
