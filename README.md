@@ -52,6 +52,9 @@ This application can be deployed using Vercel (frontend) and Render (backend).
 
 ### Important Note: These are general deployment instructions. Each platform has its own configuration steps. Be sure to consult the specific documentation for Vercel and Render for detailed deployment instructions.
 
+## API Documentation
+https://documenter.getpostman.com/view/33466891/2sA3XQfLwr
+
 ## License
 Copyright 2024 
 
