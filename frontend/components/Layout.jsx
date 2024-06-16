@@ -2,6 +2,9 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useAppContext } from "/context/AppContext";
 import Cookie from "js-cookie";
+import Footer from "/components/Footer"
+import Modal from '/components/Modal/Modal'
+
 const Cart = dynamic(() => import("/components/Cart"), { ssr: false });
 
 import Head from "next/head";
@@ -18,6 +21,7 @@ function Navigation() {
   }
 
   return (
+    
     <header className="bg-red-500">
       <nav className="flex justify-between p-6 px-4">
         <div className="flex justify-between items-center w-full mx-16">
@@ -92,6 +96,10 @@ export default function Layout(props) {
       <Navigation />
       <Cart />
       <div className="container mx-auto px-4">{props.children}</div>
+      <>
+      <Modal />
+    </>
+      <Footer />
     </div>
   );
 }
